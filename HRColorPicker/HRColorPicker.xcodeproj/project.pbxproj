@@ -24,6 +24,8 @@
 		6651280D1FD874550093B538 /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 665127FD1FD874550093B538 /* UIImage+CoreGraphics.m */; };
 		6651280E1FD874550093B538 /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 665127FE1FD874550093B538 /* HRColorPickerView.m */; };
 		66C8E0A31FD867DD009485CC /* HRColorPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C8E0A11FD867DD009485CC /* HRColorPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF3B015A242F7B0B008B057F /* HRColorMapView+SubClass.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3B0159242F7B0B008B057F /* HRColorMapView+SubClass.h */; };
+		FF3B015C242F92C0008B057F /* HRBrightnessSlider+SubClass.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3B015B242F92C0008B057F /* HRBrightnessSlider+SubClass.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		66C8E09E1FD867DD009485CC /* HRColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HRColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C8E0A11FD867DD009485CC /* HRColorPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRColorPicker.h; sourceTree = "<group>"; };
 		66C8E0A21FD867DD009485CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF3B0159242F7B0B008B057F /* HRColorMapView+SubClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HRColorMapView+SubClass.h"; sourceTree = "<group>"; };
+		FF3B015B242F92C0008B057F /* HRBrightnessSlider+SubClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HRBrightnessSlider+SubClass.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +84,14 @@
 			children = (
 				665127FA1FD874540093B538 /* HRBrightnessCursor.h */,
 				665127EF1FD874540093B538 /* HRBrightnessCursor.m */,
+				FF3B015B242F92C0008B057F /* HRBrightnessSlider+SubClass.h */,
 				665127F41FD874540093B538 /* HRBrightnessSlider.h */,
 				665127F51FD874540093B538 /* HRBrightnessSlider.m */,
 				665127F11FD874540093B538 /* HRColorCursor.h */,
 				665127F71FD874540093B538 /* HRColorCursor.m */,
 				665127F61FD874540093B538 /* HRColorInfoView.h */,
 				665127FB1FD874540093B538 /* HRColorInfoView.m */,
+				FF3B0159242F7B0B008B057F /* HRColorMapView+SubClass.h */,
 				665127F21FD874540093B538 /* HRColorMapView.h */,
 				665127F01FD874540093B538 /* HRColorMapView.m */,
 				66C8E0A11FD867DD009485CC /* HRColorPicker.h */,
@@ -108,11 +114,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				665128041FD874550093B538 /* HRBrightnessSlider.h in Headers */,
+				FF3B015C242F92C0008B057F /* HRBrightnessSlider+SubClass.h in Headers */,
 				665128081FD874550093B538 /* UIImage+CoreGraphics.h in Headers */,
 				665128061FD874550093B538 /* HRColorInfoView.h in Headers */,
 				665128091FD874550093B538 /* HRColorPickerView.h in Headers */,
 				665128011FD874550093B538 /* HRColorCursor.h in Headers */,
 				66C8E0A31FD867DD009485CC /* HRColorPicker.h in Headers */,
+				FF3B015A242F7B0B008B057F /* HRColorMapView+SubClass.h in Headers */,
 				665128031FD874550093B538 /* HRHSVColorUtil.h in Headers */,
 				6651280A1FD874550093B538 /* HRBrightnessCursor.h in Headers */,
 				665128021FD874550093B538 /* HRColorMapView.h in Headers */,

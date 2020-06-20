@@ -35,7 +35,6 @@
     UIColor *_color;
     CGFloat _brightness;
     NSNumber *_saturationUpperLimit;
-    HRColorCursor *_colorCursor;
     NSOperationQueue *_initializeQueue;
     BOOL _didLayoutSubview;
 }
@@ -260,8 +259,8 @@
     CGRect cursorFrame = _colorCursor.frame;
 
     cursorFrame.origin = CGPointMake(
-            -([HRColorCursor cursorSize].width - _tileSize.floatValue) / 2.0f,
-            -([HRColorCursor cursorSize].height - _tileSize.floatValue) / 2.0f);
+            -([[_colorCursor class] cursorSize].width - _tileSize.floatValue) / 2.0f,
+            -([[_colorCursor class] cursorSize].height - _tileSize.floatValue) / 2.0f);
     _colorCursor.frame = cursorFrame;
 }
 

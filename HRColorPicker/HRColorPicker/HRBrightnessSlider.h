@@ -29,6 +29,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class HRBrightnessCursor;
+
 @protocol HRBrightnessSlider
 
 @required
@@ -41,5 +43,10 @@
 @end
 
 @interface HRBrightnessSlider : UIControl <HRBrightnessSlider>
+{
+    HRBrightnessCursor *_brightnessCursor;
+    
+    CAGradientLayer *_sliderLayer;
+}
 
 @end

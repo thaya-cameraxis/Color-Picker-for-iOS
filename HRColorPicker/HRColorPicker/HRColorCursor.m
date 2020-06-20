@@ -36,9 +36,7 @@
 @end
 
 @implementation HRColorCursor {
-    CALayer *_backLayer;
     CALayer *_colorLayer;
-    UIColor *_color;
     BOOL _editing;
 }
 
@@ -48,12 +46,12 @@
     return CGSizeMake(28.0, 28.0f);
 }
 
-+ (HRColorCursor *)colorCursorWithPoint:(CGPoint)point {
-    return [[HRColorCursor alloc] initWithPoint:point];
++ (instancetype)colorCursorWithPoint:(CGPoint)point {
+    return [[[self class] alloc] initWithPoint:point];
 }
 
 - (id)initWithPoint:(CGPoint)point {
-    CGSize size = [HRColorCursor cursorSize];
+    CGSize size = [[self class] cursorSize];
     CGRect frame = CGRectMake(point.x, point.y, size.width, size.height);
     self = [super initWithFrame:frame];
     if (self) {

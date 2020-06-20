@@ -28,7 +28,15 @@
 #import <UIKit/UIKit.h>
 
 @interface HRBrightnessCursor : UIView
+{
+    UIColor *_color;
+    CALayer *_backLayer;
+    UILabel *_brightnessLabel;
+    BOOL _editing;
+}
+
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic) BOOL editing;
+
 @end
 

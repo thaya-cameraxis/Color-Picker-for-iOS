@@ -30,14 +30,18 @@
 
 
 @implementation HRBrightnessCursor {
-    CALayer *_backLayer;
     CALayer *_colorLayer;
-    UILabel *_brightnessLabel;
-    BOOL _editing;
+}
+
+@synthesize color = _color;
+
++ (CGSize)cursorSize {
+    return CGSizeMake(28.0, 28.0f);
 }
 
 - (id)init {
-    self = [super initWithFrame:CGRectMake(0, 0, 28, 28)];
+    CGSize size = [[self class] cursorSize];
+    self = [super initWithFrame:CGRectMake(0, 0, size.width, size.height)];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         self.userInteractionEnabled = NO;

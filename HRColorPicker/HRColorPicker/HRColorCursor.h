@@ -34,11 +34,17 @@
 @end
 
 @interface HRColorCursor : UIView <HRColorCursor>
+{
+    UIColor *_color;
+    CALayer *_backLayer;
+}
 
 @property (nonatomic, strong) UIColor *color;
 
 + (CGSize)cursorSize;
 
-+ (HRColorCursor *)colorCursorWithPoint:(CGPoint)point;
++ (instancetype)colorCursorWithPoint:(CGPoint)point;
+
+- (id)initWithPoint:(CGPoint)point;
 
 @end

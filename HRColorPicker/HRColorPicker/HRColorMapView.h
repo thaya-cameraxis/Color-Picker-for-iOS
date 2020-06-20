@@ -29,6 +29,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class HRColorCursor;
+
 @protocol HRColorMapView
 
 @required
@@ -41,6 +43,9 @@
 @end
 
 @interface HRColorMapView : UIControl <HRColorMapView>
+{
+    HRColorCursor *_colorCursor;
+}
 
 + (HRColorMapView *)colorMapWithFrame:(CGRect)frame;
 + (HRColorMapView *)colorMapWithFrame:(CGRect)frame saturationUpperLimit:(CGFloat)saturationUpperLimit;

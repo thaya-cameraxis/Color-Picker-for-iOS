@@ -31,9 +31,6 @@
 #import "HRHSVColorUtil.h"
 
 @implementation HRBrightnessSlider {
-    HRBrightnessCursor *_brightnessCursor;
-
-    CAGradientLayer *_sliderLayer;
     NSNumber *_brightness;
     UIColor *_color;
 
